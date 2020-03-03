@@ -1,0 +1,32 @@
+class angryFace{
+  constructor(xPos1,yPos1){
+    this.xPos=xPos1;
+    this.yPos=yPos1;
+  }
+   display(){
+     push();
+  translate(this.xPos,this.yPos);
+ fill(0);
+     push();
+     rotate(20);
+rect(width*.06,-height*.02,width*.25,height*.08,20);
+  pop();
+     push();
+     rotate(-25);
+rect(width*.3,height*.15,width*.3,height*.08,20);
+     pop();
+push();
+     rotate(-5);
+     rectMode(CENTER);
+     fill(230,50,70);
+rect(width*.3,height*.65,width*.4,height*.23,30);
+fill(255);
+rect(width*.3,height*.65,width*.3,height*.13,10);
+fill(0);
+line(width*.4,height*.59,width*.4,height*.71,);
+line(width*.2,height*.59,width*.2,height*.71,);
+line(width*.3,height*.59,width*.3,height*.71,);
+pop();
+pop();
+   }
+}
